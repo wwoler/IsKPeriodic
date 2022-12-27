@@ -8,7 +8,7 @@ struct IsKPeriodic
 		if (K <= 0 || str.empty() || str.size() <= K || str.size() % K)
 			return false;
 
-		for (int i = 0; i < str.size() / (str.size() / K); ++i)
+		for (int i = 0; i < K; ++i)
 		{
 			for (int j = i + K; j < str.size(); j += K)
 			{
